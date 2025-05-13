@@ -1,5 +1,5 @@
 # Editor Configs
-.idea/
+/.idea/
 
 # Node Modules
 yarn.lock
