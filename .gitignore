@@ -6,4 +6,7 @@ yarn.lock
 node_modules/
 
 # Envrionment Files
-.env.local
+dev/.env.local
+
+# Local Testing Files
+/dev/
