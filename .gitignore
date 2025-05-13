@@ -1,0 +1,9 @@
+# Editor Configs
+.idea/
+
+# Node Modules
+yarn.lock
+node_modules/
+
+# Envrionment Files
+.env.local
