@@ -13,9 +13,9 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 | Change Map                                            | Map                         | ❌           | ChangeMap                           | ✅           | SessionManager              |
 | Get Map                                               | Get Map                     | ❌           | ServerInformation(name=session)     | ✅           | SessionManager              |
 | Change Sector Layout                                  | GameLayout                  | ❌           | ChangeSectorLayout                  | ✅           | SessionManager              |
-| Get Sector Layout                                     | Get ObjectiveRow_(0-4)      | ❌           | N/A*                                | N/A*        | SessionManager **           |
+| Get Sector Layout                                     | Get ObjectiveRow_(0-4)      | ❌           | N/A*                                | N/A*        | SessionManager              |
 | Server Broadcast                                      | Broadcast                   | ❌           | ServerBroadcast                     | ✅           | SessionManager              |
-| Get Game State (player #, score, time, map, next map) | Get GameState               | ❌           | N/A*                                | N/A*        | SessionManager **           |
+| Get Game State (player #, score, time, map, next map) | Get GameState               | ❌           | N/A*                                | N/A*        | SessionManager              |
 | Get Maps For Rotation                                 | Get MapsForRotation         | ❌           | N/A*                                | N/A*        | ServerManager **            |
 | Get Maps In Rotation                                  | RotList                     | ❌           | N/A*                                | N/A*        | ServerManager **            |
 | Add Map to Rotation                                   | RotAdd                      | ❌           | AddMapToRotation                    | ❌           | ServerManager **            |
@@ -32,7 +32,7 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 | Get Max Queued Players                                | Get MaxQueuedPlayers        | ❌           | ServerInformation(name=session)     | ❌           | ServerManager **            |
 | Set Idle Kick Duration                                | SetKickIdleTime             | ❌           | SetIdleKickDuration                 | ❌           | ServerManager **            |
 | Get Idle Kick Duration                                | Get IdleTime                | ❌           | N/A*                                | N/A*        | ServerManager **            |
-| Set High Ping Threshold                               | SetHighPing                 | ❌           | SetHighPingThreshold                | ❌           | ServerManager               |
+| Set High Ping Threshold                               | SetHighPing                 | ❌           | SetHighPingThreshold                | ❌           | ServerManager **            |
 | Get High Ping Threshold                               | Get HighPing                | ❌           | N/A*                                | N/A*        | ServerManager **            |
 | Get Current/Max Slots                                 | Get Slots                   | ❌           | ServerInformation(name=session)     | ❌           | ServerManager **            |
 | Send Server/Welcome Message                           | Say                         | ❌           | SendServerMessage                   | ✅           | ServerManager  (TODO: MOVE) |
@@ -72,4 +72,4 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 | Client Reference Data                                 | **Help Command? **          | ❌           | ClientReferenceData                 | ❌           | RCONClientV2 **             |
 | Admin Log                                             | ShowLog                     | ❌           | AdminLog                            | ❌           | LogManager **               |
 
-*N/A\* Some methods supported by RCONv1 are not supported by RCONv2, and vice versa; \*\*Not yet implemented.*
+*N/A\* Some methods supported by RCONv1 are not supported by RCONv2, and vice versa; \*\*Manager not yet implemented.*
