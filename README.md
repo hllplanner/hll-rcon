@@ -5,8 +5,11 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 ## Coverage
 
 - [x] Add Admin (v2)
+- [x] Add Admin (v1)
 - [x] Remove Admin (v2)
-- [ ] List Admins (v1)
+- [x] Remove Admin (v1)
+- [x] List Admins (v1)
+- [ ] List Admins (v2) - **Not yet supported by RCONv2**
 - [ ] Admin Log (v2)
 - [ ] Change Map (v2)
 - [ ] Change Sector Layout (v2)
