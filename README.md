@@ -10,11 +10,11 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 | Remove Admin                                          | AdminDel                    | ✅           | RemoveAdmin                         | ✅           | AdminManager                |
 | List Admins                                           | Get AdminIds                | ✅           | N/A*                                | N/A*        | AdminManager                |
 | List Admin Groups                                     | Get AdminGroups             | ✅           | N/A*                                | N/A*        | AdminManager                |
-| Change Map                                            | Map                         | ❌           | ChangeMap                           | ✅           | SessionManager              |
-| Get Map                                               | Get Map                     | ❌           | ServerInformation(name=session)     | ✅           | SessionManager              |
-| Change Sector Layout                                  | GameLayout                  | ❌           | ChangeSectorLayout                  | ✅           | SessionManager              |
-| Get Sector Layout                                     | Get ObjectiveRow_(0-4)      | ❌           | N/A*                                | N/A*        | SessionManager              |
-| Server Broadcast                                      | Broadcast                   | ❌           | ServerBroadcast                     | ✅           | SessionManager              |
+| Set Map                                               | Map                         | ✅           | ChangeMap                           | ✅           | SessionManager              |
+| Get Map                                               | Get Map                     | ✅           | ServerInformation(name=session)     | ✅           | SessionManager              |
+| Set Sector Layout                                     | GameLayout                  | ✅           | ChangeSectorLayout                  | ✅           | SessionManager              |
+| Get Sector Layout                                     | Get ObjectiveRow_(0-4)      | ✅           | N/A*                                | N/A*        | SessionManager              |
+| Server Broadcast                                      | Broadcast                   | ✅           | ServerBroadcast                     | ✅           | SessionManager              |
 | Get Game State (player #, score, time, map, next map) | Get GameState               | ❌           | N/A*                                | N/A*        | SessionManager              |
 | Get Maps For Rotation                                 | Get MapsForRotation         | ❌           | N/A*                                | N/A*        | ServerManager **            |
 | Get Maps In Rotation                                  | RotList                     | ❌           | N/A*                                | N/A*        | ServerManager **            |
@@ -67,7 +67,7 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 | Get VIPs                                              | Get vipids                  | ❌           | N/A*                                | N/A*        | VIPManager **               |
 | Set VIP Slot Count                                    | SetNumVipSlots              | ❌           | N/A*                                | N/A*        | VIPManager **               |
 | Get VIP Slot Count                                    | Get NumVipSlots             | ❌           | N/A*                                | N/A*        | VIPManager **               |
-| Change RCON password                                  | RconPassword                | ❌           | N/A*                                | N/A*        | ServerManager **            |
+| Set RCON password                                     | RconPassword                | ❌           | N/A*                                | N/A*        | ServerManager **            |
 | Displayable Commands                                  | Help                        | ❌           | DisplayableCommands                 | ❌           | RCONClientV2 **             |
 | Client Reference Data                                 | **Help Command? **          | ❌           | ClientReferenceData                 | ❌           | RCONClientV2 **             |
 | Admin Log                                             | ShowLog                     | ❌           | AdminLog                            | ❌           | LogManager **               |
