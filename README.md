@@ -74,3 +74,9 @@ A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
 
 <sub>*N/A\* Some methods supported by RCONv1 are not supported by RCONv2, and vice versa.*</sub><br/>
 <sub>*\*\*Manager not yet implemented.*</sub>
+
+# TODO
+
+- Message Queues
+- Better support for map logging - Differentiate map name from gamemode - Create list of all maps and relevant data
+- Verify ban log parsing works with new regexp
