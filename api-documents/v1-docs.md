@@ -2,6 +2,25 @@
 
 Forked from https://gist.github.com/timraay/5634d85eab552b5dfafb9fd61273dc52
 
+Changes from fork:
+- Kick accepts the player name, if it isnt found the server returns `FAIL`.
+- For `PermaBan` and `TempBan` usernames that arent found now return `SUCCESS` and add whatever was given as an active ban.
+- Fixed typo for `PardonPermaPan` -> `PardonPermaBan`
+- `PardonPermaBan` and `PardonTempBan` also accept the banned user's id.
+- When banning, the `BAN` log is created then `KICK` and `DISCONNECTED` logs are subsequently created. Additionally, none are created if the user is not in the server at the time the ban command is sent, even though the ban is still in effect.
+- Temporary bans must be integers, rational numbers for <1 hour ban windows arent supported. If a rational number is entered it will default to the 2 hour duration.
+- Fixed the markdown of most(all?) tables
+- Ban logs can take several forms under the same `BAN` keyword depending on its type and if reason was given
+- Add table of contents
+- Add hll-ircon as example protocols
+- Mention temp ban hour format for durations exceeding 999 hours
+- Added vote logs
+- Added teamswitch logs
+- `Message` does not require quotes around the message.
+- Other small changes
+
+---
+
 - [Protocol](#protocol)
 - [Commands](#commands)
     + [Help](#help)
