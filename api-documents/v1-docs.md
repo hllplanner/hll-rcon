@@ -152,7 +152,7 @@ dictate the length of the list (excluding itself), and the response always ends 
 > the list to fail. To prevent this from happening, you should replace any tabs before sending requests to the server.
 >
 > An example of this is the [`vipadd`](#vipadd-player_id-name) command. When the `name` parameter here includes a tab,
-> any subsequent [`get vipids`](#get-vipids) commands will be programatically unreadable until the VIP is removed again
+> any subsequent [`get vipids`](#get-vipids) commands will be programmatically unreadable until the VIP is removed again
 > using the [`vipdel`](#vipdel-player_id) command.
 
 ### Built-in console
@@ -613,7 +613,7 @@ Get a [list](#lists) of all VIPs, which includes a UID and a comment (usually th
 
 ```
 > get vipids
-2\t76561199023367826 Abu (Admin)\t12345678901234567 AnotherName\t
+2\t76561199023367826 "Abu (Admin)"\t12345678901234567 "AnotherName"\t
 ```
 
 ***
