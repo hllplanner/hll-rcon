@@ -730,6 +730,9 @@ Both the reason and admin name are omitted if they were not provided when the pl
 
 Get a [list](#lists) of all active permanent bans.
 
+> [!NOTE]
+> The player's nickname will only be returned from this if they were in the server at the time they were banned.
+
 Each returned ban is a string (or so-called "ban log") that you have to parse yourself. It will include the UID, name at
 the time of ban, date banned, reason, and admin name:
 
@@ -831,6 +834,10 @@ Temporarily ban a player for the duration and reason specified.
 > The `<"player_id">` parameter technically also supports player names although this is bad practice and not
 > recommended. The game server will take it at face value and not check if the username or UID is valid, adding whatever
 > input is given as a permanent ban, and returning `SUCCESS`.
+
+> [!NOTE]
+> Unless the player is in the server at the time of the ban, if a nickname is used in favor of an id, the ban will be
+> added, however will not take effect.
 
 **Params:**
 
