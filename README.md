@@ -1,6 +1,12 @@
-## HLL Integrated RCON
+<div align="center">
+<img src="https://ircon.hllplanner.net/img/ircon-primary-logo-transparent.png">
+<h1>HLL Integrated RCON</h1>
+<h3>A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.</h3>
+</div>
 
-A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.
+<br>
+
+---
 
 ## Coverage
 
