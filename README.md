@@ -1,6 +1,6 @@
 <div align="center">
-<img src="https://ircon.hllplanner.net/img/ircon-primary-logo-transparent.png">
-<h1>HLL Integrated RCON</h1>
+<img src="https://github.com/hllplanner/hll-ircon/blob/master/.github/resources/ircon-primary-logo-transparent-slim.png">
+<h2>HLL Integrated RCON</h2>
 <h3>A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.</h3>
 </div>
 
