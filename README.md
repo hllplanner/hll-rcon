@@ -10,8 +10,6 @@
 <h3>A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.</h3>
 </div>
 
-<br>
-
 ---
 
 ## Coverage
