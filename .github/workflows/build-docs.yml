@@ -28,7 +28,7 @@ jobs:
       - name: Deploy Docusaurus
         env:
           GIT_USER: github-actions
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GIT_PASS: ${{ secrets.GITHUB_TOKEN }}
           DEPLOYMENT_BRANCH: gh-pages
           USE_SSH: false
         working-directory: ./docs
