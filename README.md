@@ -7,7 +7,7 @@
     </summary>
   </ul>
 </div>
-<h3>A NodeJS library to interact with Hell Let Loose RCON v1 and RCON v2.</h3>
+<h3>A NodeJS library to interact with Hell Let Loose's RCONv1 and RCONv2 APIs</h3>
 </div>
 
 ---
@@ -90,4 +90,3 @@
 - Message Queues
 - Better support for map logging - Differentiate map name from gamemode - Create list of all maps and relevant data
 - Create mocked rcon server for 100% test coverage
-- make sure all v1 commands that can be quoted are quoted
