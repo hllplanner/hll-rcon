@@ -15,7 +15,7 @@ yarn add hll-ircon
 npm i hll-ircon
 ```
 
-## Instantiate the IRCONClient
+## Instantiating the IRCONClient
 
 ```js title="index.js"
 const { IRCONClient } = require("hll-ircon");
