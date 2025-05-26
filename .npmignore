@@ -1,0 +1,22 @@
+# Editor Configs
+/.idea/
+
+# Node Modules
+yarn.lock
+node_modules/
+
+# Envrionment Files
+dev/.env.local
+
+# Local Testing Files
+/dev/
+
+# Documentation
+api-documents/
+docs/
+
+# Test Cases
+test/
+
+# Github Resources
+.github/
