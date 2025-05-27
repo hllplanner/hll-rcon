@@ -25,7 +25,7 @@ await RCONClientV1.admins.list();
 ```
 
 #### Returns
-`List<{ playerId: string, group: string, comment: string }>`
+`Array<{ playerId: string, group: string, comment: string }>`
 
 ---
 

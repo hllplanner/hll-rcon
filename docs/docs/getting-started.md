@@ -32,3 +32,8 @@ client.on("ready", () => {
 ```
 
 That's it! Now you can start sending commands and building your client.
+
+:::tip
+If a method parameter is marked as required, a process error will be thrown. Please validate inputs before passing them
+to an API.
+:::
