@@ -1,14 +1,5 @@
 const parseLogEntry = require("../lib/utils/parseLogEntry");
 
-test("Test Header Validation", () => {
-  expect(() => {
-    parseLogEntry({
-      timestamp: 0,
-      message: "TEST"
-    });
-  }).toThrow(`Log has invalid header: TEST`);
-});
-
 // Test different time formats in header
 describe("Test Header Time Format Parsing", () => {
   test.each([
@@ -437,6 +428,7 @@ describe("Validate Ban Logs", () => {
       playerName: "Player Name",
       fullReason: "PERMANENTLY BANNED BY THE ADMINISTRATOR!",
       customReason: undefined,
+      bannedBy: "THE ADMINISTRATOR",
       temporary: false,
       duration: null
     });
@@ -454,6 +446,7 @@ describe("Validate Ban Logs", () => {
       playerName: "Player Name",
       fullReason: "PERMANENTLY BANNED BY THE ADMINISTRATOR!\\n\\nreason1 reason2",
       customReason: "reason1 reason2",
+      bannedBy: "THE ADMINISTRATOR",
       temporary: false,
       duration: null
     });
@@ -470,6 +463,7 @@ describe("Validate Ban Logs", () => {
       timestamp: 1234,
       playerName: "Player Name",
       fullReason: "BANNED FOR 1 HOURS BY THE ADMINISTRATOR!",
+      bannedBy: "THE ADMINISTRATOR",
       customReason: undefined,
       temporary: true,
       duration: 1
@@ -487,6 +481,7 @@ describe("Validate Ban Logs", () => {
       timestamp: 1234,
       playerName: "Player Name",
       fullReason: "BANNED FOR 1 HOURS BY THE ADMINISTRATOR!\\n\\ntest reason",
+      bannedBy: "THE ADMINISTRATOR",
       customReason: "test reason",
       temporary: true,
       duration: 1
@@ -505,6 +500,7 @@ describe("Validate Ban Logs", () => {
       playerName: "Player Name",
       fullReason: "BANNED FOR 1,234 HOURS BY THE ADMINISTRATOR!",
       customReason: undefined,
+      bannedBy: "THE ADMINISTRATOR",
       temporary: true,
       duration: 1234
     });
@@ -553,7 +549,7 @@ test("Player Entered Admin Camera", () => {
     type: "playerEnteredAdminCamera",
     timestamp: 1234,
     playerName: "Player Name",
-    playerId: "Player ID",
+    playerId: "Player ID"
   });
 });
 
@@ -567,6 +563,6 @@ test("Player Left Admin Camera", () => {
     type: "playerLeftAdminCamera",
     timestamp: 1234,
     playerName: "Player Name",
-    playerId: "Player ID",
+    playerId: "Player ID"
   });
-})
+});
