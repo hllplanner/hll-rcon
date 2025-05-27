@@ -8,7 +8,7 @@ into easily digestible JSON formats listed below.
 
 :::note
 Every log shares two common variables: `type` and `timestamp`. Because of this they will be omitted from the following
-definitions. The header of each definition below is its `header` variable.
+definitions. The header of each definition below is its `type` variable.
 :::
 
 ---
