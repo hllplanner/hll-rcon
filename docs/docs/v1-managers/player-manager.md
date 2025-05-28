@@ -63,7 +63,7 @@ await RCONClientV1.players.get(playerName);
 #### Returns
 
 ```
-{
+Promise<{
   playerName: string, 
   playerId: string, 
   playerFaction: string, 
@@ -77,7 +77,7 @@ await RCONClientV1.players.get(playerName);
   offensiveScore: number, 
   defensiveScore: number, 
   supportScore: number
-}
+}>
 ```
 
 or
