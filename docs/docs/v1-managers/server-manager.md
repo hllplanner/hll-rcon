@@ -312,7 +312,7 @@ console.log(response); // [ [ 0, 5 ], [ 20, 10 ], [ 50, 25 ] ]
 Using this command to manipulate vote kick thresholds is **not** recommended. It sets the threshold to an empty string
 with a space, I am unable to verify what this actually reflects to on the server.
 If you need to update the vote kick thresholds, use the before
-mentioned [setVoteKickThresholds method](#set-vote-kick-thresholds).
+mentioned [setVoteKickThresholds](#set-vote-kick-thresholds) method.
 
 :::
 
