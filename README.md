@@ -89,4 +89,5 @@
 
 - Better support for map logging - Differentiate map name from gamemode - Create list of all maps and relevant data
 - Create mocked rcon server for 100% test coverage
-- Update v1 jsdoc: add parameter descriptions for ServerManager, update response type to Promise<"SUCCESS" | "FAIL"> for applicable responses.
+- Manually fix annoying capitalization schemas in v2 api
+- Create combined IRCONClient managers
