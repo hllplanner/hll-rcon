@@ -83,7 +83,6 @@
 | <sub> Admin Log                                             | <sub> ShowLog                     | <sub> ✅           | <sub> AdminLog                            | <sub> ✅           | <sub> LogManager      |
 
 <sub>*N/A\* Some methods supported by RCONv1 are not supported by RCONv2, and vice versa.*</sub><br/>
-<sub>*\*\*Manager not yet implemented.*</sub>
 
 # TODO
 
