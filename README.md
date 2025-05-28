@@ -90,4 +90,6 @@
 - Better support for map logging - Differentiate map name from gamemode - Create list of all maps and relevant data
 - Create mocked rcon server for 100% test coverage
 - Manually fix annoying capitalization schemas in v2 api
+- Make all v2 methods return ResponseMessage
+- For all v1 methods, if the server response is success/fail, make response delay 0ms, should never need a second packet.
 - Create combined IRCONClient managers

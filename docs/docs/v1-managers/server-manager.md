@@ -45,9 +45,9 @@ await RCONClientV1.server.setMaxQueuedPlayers(count);
 
 #### Parameters
 
-| Name  | Description     | Type   | Required |
-|-------|-----------------|--------|----------|
-| count | The queue size. | number | True     |
+| Name  | Description         | Type   | Required |
+|-------|---------------------|--------|----------|
+| count | The queue size. 1-6 | number | True     |
 
 #### Returns
 
@@ -142,7 +142,7 @@ await RCONClientV1.server.getSlots();
 ### Set Welcome Message
 
 ```js
-await RCONClientV1.server.say(message);
+await RCONClientV1.server.setWelcomeMessage(message);
 ```
 
 #### Parameters
