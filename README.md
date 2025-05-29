@@ -87,13 +87,11 @@
 # TODO
 
 - Better support for map logging - Differentiate map name from gamemode - Create list of all maps and relevant data
-- Create mocked rcon server for 100% test coverage
 - Manually fix annoying capitalization schemas in v2 api
 - Ensure missing required parameters throw error for v2 managers
 - For all v1 methods, if the server response is success/fail, make response delay 0ms, should never need a second
   packet.
 - Create combined IRCONClient managers
-- Debug tools
 - Custom events: `playerKilled`, `playerTeamkilled`, etc.
 - Ensure all jsdoc is similar structure, require dashes and periods.
 - Make v2 managers return false instead of throwing an error.
