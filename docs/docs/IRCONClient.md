@@ -24,6 +24,8 @@ const client = new IRCONClient({
   pollWindow: 30,               // How far to backtrack logs in seconds
   pollFrequency: 1,             // How frequently to poll new logs in milliseconds
 
-  debug: false                  // Whether or not to enable debugging. Enter `true` to debug both RCONv1 and RCONv2, otherwise enter 1 or 2 to indicate which version to enable logging for.
+  debug: false                  // Whether or not to enable debugging. Enter `true` to debug both RCONv1 
+                                // and RCONv2, otherwise enter 1 or 2 to indicate which version to 
+                                // enable logging for.
 });
 ```
