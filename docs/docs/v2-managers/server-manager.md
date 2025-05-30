@@ -27,7 +27,7 @@ await RCONClientV2.server.setTeamSwitchCooldown(cooldown);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -45,7 +45,7 @@ await RCONClientV2.server.setMaxQueuedPlayers(count);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -57,7 +57,7 @@ await RCONClientV2.server.getMaxQueuedPlayers();
 
 #### Returns
 
-`Promise<number>`
+`Promise<{ success: boolean, error?: string, maxQueueCount?: number }>`
 
 ---
 
@@ -82,7 +82,7 @@ await RCONClientV2.server.setIdleKickCooldown(cooldown);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -107,7 +107,7 @@ await RCONClientV2.server.setPingThreshold(time);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -119,7 +119,7 @@ await RCONClientV2.server.getSlots();
 
 #### Returns
 
-`Promise<{ current: number, maximum: number }>`
+`Promise<{ success: boolean, error?: string, current: number, maxiumum: number }>`
 
 ---
 
@@ -131,7 +131,7 @@ await RCONClientV2.server.getServerName();
 
 #### Returns
 
-`Promise<string>`
+`Promise<{ success: boolean, error?: string, name?: string }>`
 
 ---
 
@@ -149,7 +149,7 @@ await RCONClientV2.server.setWelcomeMessage(message);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string>`
 
 ---
 
@@ -167,7 +167,7 @@ await RCONClientV2.server.setAutoBalanceEnabled(enable);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string>`
 
 ---
 
@@ -185,7 +185,7 @@ await RCONClientV2.server.setAutoBalanceThreshold(difference);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -203,7 +203,7 @@ await RCONClientV2.server.setVoteKicksEnabled(enable);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -230,7 +230,7 @@ await RCONClientV2.server.setVoteKickThresholds([[0, 5], [20, 10], [50, 25]]);
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`
 
 ---
 
@@ -251,4 +251,4 @@ await RCONClientV2.server.resetVoteKickThresholds();
 
 #### Returns
 
-`Promise<boolean>`
+`Promise<{ success: boolean, error?: string }>`

@@ -41,7 +41,7 @@ await RCONCLientV1.admins.add(playerId, group, comment);
 |----------|-------------------------------------------------------------------------------------|--------|----------|
 | playerId | The admin's player ID.                                                              | string | True     |
 | group    | The group to add the admin to. Retrieved from [listAdminGroups](#list-admin-groups) | string | True     |
-| comment  | The comment/nickname for the admin.                                                 | string | True     |
+| comment  | The comment/nickname for the admin.                                                 | string | False    |
 
 #### Returns
 
