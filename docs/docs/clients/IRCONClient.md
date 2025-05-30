@@ -9,6 +9,7 @@ executing a command, it will always favor the RCONv2 counterpart due to the prot
 reliability. If the command is not available for RCONv2, it will favor the RCONv1 counterpart, and vice versa.
 
 ### Constructor
+
 ```js
 const { IRCONClient } = require("hll-ircon");
 
