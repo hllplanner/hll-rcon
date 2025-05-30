@@ -89,5 +89,4 @@
 - Better support for map logging - Differentiate map name from gamemode - Create list of all maps and relevant data
 - Manually fix annoying capitalization schemas in v2 api
 - Create combined IRCONClient managers
-- Custom events: `playerKilled`, `playerTeamkilled`, etc.
 - Ensure v2 ServerManager methods function on the server.

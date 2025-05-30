@@ -13,6 +13,30 @@ definitions. The header of each definition below is its `type` variable.
 
 ---
 
+### Log Events
+
+If polling is enabled, each log below will be fired as an event on the IRCONClient class.
+
+### Example
+
+```js
+IRCONClient.on("playerConnected", (log) => {
+  console.log(log);
+
+  //  Logs the following:
+  //
+  //  {
+  //    id: "LOG_HASH",
+  //    parsed: {
+  //      playerId: "PLAYER_ID",
+  //      playerName: "PLAYER_NAME"
+  //    }
+  //  }
+})
+```
+
+---
+
 ### playerConnected
 
 | Name       | Type   | Comment |
@@ -186,14 +210,14 @@ static value in the log, not a placeholder.
 
 ### playerEnteredAdminCamera
 
-| Name          | Type   | Comment                            |
-|---------------|--------|------------------------------------|
-| playerName    | String |                                    |
-| playerId      | String |                                    |
+| Name       | Type   | Comment |
+|------------|--------|---------|
+| playerName | String |         |
+| playerId   | String |         |
 
 ### playerLeftAdminCamera
 
-| Name          | Type   | Comment                            |
-|---------------|--------|------------------------------------|
-| playerName    | String |                                    |
-| playerId      | String |                                    |
+| Name       | Type   | Comment |
+|------------|--------|---------|
+| playerName | String |         |
+| playerId   | String |         |
