@@ -11,7 +11,7 @@ The server manager is used for manipulating and retrieving server configurations
 
 :::danger
 
-This command seems to be broken in RCONv2, use the RCONv1 equivalent.
+This command will always return a `400` error, even if it was successful.
 
 :::
 
