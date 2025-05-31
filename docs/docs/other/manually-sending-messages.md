@@ -117,9 +117,9 @@ to 14600, inconsistent in other words and therefore dangerous.
 ```js
 console.time("Duration");
 
-const allPlayers = await client.v1Client.players.fetchPlayerIds();
+const allPlayers = await client.v1.players.fetchPlayerIds();
 for (const player of allPlayers) {
-  const response = await client.v1Client._send(`PlayerInfo ${player.playerName}`);
+  const response = await client.v1._send(`PlayerInfo ${player.playerName}`);
   console.log(response);
 }
 
@@ -142,9 +142,9 @@ Duration: 1:55.499 (m:ss.mmm)
 ```js
 console.time("Duration");
 
-const allPlayers = await client.v1Client.players.fetchPlayerIds();
+const allPlayers = await client.v1.players.fetchPlayerIds();
 for (const player of allPlayers) {
-  const response = await client.v1Client._send(`PlayerInfo ${player.playerName}`, { shortResponse: true });
+  const response = await client.v1._send(`PlayerInfo ${player.playerName}`, { shortResponse: true });
   console.log(response);
 }
 
@@ -167,15 +167,15 @@ Duration: 16.519s
 ```js
 console.time("Duration");
 
-const allPlayers = await client.v2Client.players.fetch();
+const allPlayers = await client.v2.players.fetch();
 
 for (const player of allPlayers.players) {
-  const requestMessage = new RequestMessage(client.v2Client, "ServerInformation", {
+  const requestMessage = new RequestMessage(client.v2, "ServerInformation", {
     Name: "player",
     Value: player.iD
   });
 
-  const response = await client.v2Client._send(requestMessage);
+  const response = await client.v2._send(requestMessage);
 
   console.log(response);
 }

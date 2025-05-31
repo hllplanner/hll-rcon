@@ -12,6 +12,35 @@
 
 ---
 
+## Installation
+
+```bash
+yarn add hll-ircon
+...
+npm i hll-ircon
+```
+
+## Getting Started
+
+```js
+const { IRCONClient } = require("hll-ircon");
+
+const client = new IRCONClient({
+  host: "127.0.0.1",
+  port: "8000",
+  password: "RCON_PASSWORD"
+});
+
+client.on("ready", async () => {
+  const serverName = await client.v2.server.getServerName();
+  console.log(`Logged in to server: ${serverName}`);
+});
+```
+
+## [Read The Full Documentation](https://ircon.hllplanner.net)
+
+---
+
 ## Coverage
 
 | <sub> Action                                                | <sub> v1 Command Name             | <sub> v1 Coverage | <sub> v2 Command Name                     | <sub> v2 Coverage | <sub> Implemented In  |
