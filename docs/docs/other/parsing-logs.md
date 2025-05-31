@@ -15,7 +15,8 @@ definitions. The header of each definition below is its `type` variable.
 
 ### Log Events
 
-If polling is enabled, each log below will be fired as an event on the IRCONClient class.
+If polling is enabled, each log below will be fired as an event on the IRCONClient class. The eventName will be the same
+as its event type. Additionally, there is a special `newLog` event, which fires for every new log that is parsed.
 
 ### Example
 
