@@ -4,9 +4,8 @@ title: IRCONClient
 description: The IRCONClient
 ---
 
-The `IRCONClient` is the primary client, exposing methods from both the `RCONClientV1` and `RCONClientV2` classes. When
-executing a command, it will always favor the RCONv2 counterpart due to the protocol's enhanced speed and
-reliability. If the command is not available for RCONv2, it will favor the RCONv1 counterpart, and vice versa.
+The `IRCONClient` is the primary client, exposing both the `RCONClientV1` and `RCONClientV2` classes. You can access the
+RCONv2 client through `IRCONClient.v2` and RCONv1 client through `IRCONClient.v1`.
 
 ### Constructor
 
