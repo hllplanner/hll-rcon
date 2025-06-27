@@ -121,12 +121,34 @@ await RCONClientV2.maps.moveMapInSequence(currentIndex, newIndex);
 ### Set Map Shuffling
 
 ```js
-await RCONClientV1.maps.setMapShuffling(enable);
+await RCONClientV2.maps.setMapShuffling(enable);
 ```
 
-| Name   | Description                            | Type    | Required |
-|--------|----------------------------------------|---------|----------|
-| enable | Whether or not to enable map shuffling | boolean | True     |
+| Name   | Description                             | Type    | Required |
+|--------|-----------------------------------------|---------|----------|
+| enable | Whether or not to enable map shuffling. | boolean | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Enable Dynamic Weather for Map
+
+::: warning
+Make sure the map you're trying to enable or disable dynamic weather for supports dynamic weather. This is not validated
+by the library.
+:::
+
+```js
+await RCONClientV2.maps.enableDynamicWeatherForMap(map, enable);
+```
+
+| Name   | Description                                           | Type    | Required |
+|--------|-------------------------------------------------------|---------|----------|
+| mapId  | The ID of the map to toggle dynamic weather for.      | string  | True     |
+| enable | Whether or not to enable dynamic weather for the map. | boolean | True     |
 
 #### Returns
 

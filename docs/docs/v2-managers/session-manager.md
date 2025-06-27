@@ -27,8 +27,8 @@ Promise<{
     maxPlayerCount: number,
     queueCount: number,
     maxQueueCount: number,
-    vIPQueueCount: number,
-    maxVIPQueueCount: number
+    vipQueueCount: number,
+    maxVipQueueCount: number
   }
 }>
 ```

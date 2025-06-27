@@ -252,3 +252,176 @@ await RCONClientV2.server.resetVoteKickThresholds();
 #### Returns
 
 `Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Get Server Configuration
+
+```js
+await RCONClientV2.server.getConfiguration();
+```
+
+#### Returns
+
+```ts
+Promise<{
+  success: boolean,
+  error?: string,
+  config?: {
+    serverName: string,
+    buildNumber: string,
+    buildRevision: string,
+    supportedPlatforms: Array<string>,
+    passwordProtected: boolean
+  }
+}>
+```
+
+---
+
+### List Profanities
+
+```js
+await RCONClientV2.server.listProfanities();
+```
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string, bannedWords?: Array<string> }>`
+
+---
+
+### Add Profanities
+
+```js
+await RCONClientV2.server.addProfanities(profanities);
+```
+
+#### Parameters
+
+| Name        | Description                           | Type            | Required |
+|-------------|---------------------------------------|-----------------|----------|
+| profanities | The words or phrases you want to ban. | `Array<string>` | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Remove Profanities
+
+```js
+await RCONClientV2.server.removeProfanities(profanities);
+```
+
+#### Parameters
+
+| Name        | Description                             | Type            | Required |
+|-------------|-----------------------------------------|-----------------|----------|
+| profanities | The words or phrases you want to unban. | `Array<string>` | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Set Match Timer Length
+
+:::note
+`gamemode` Is not case sensitive.
+:::
+
+:::info
+Valid durations for gamemodes:<br></br>
+Warfare: [30, 180]<br></br>
+Offensive: [10, 60]<br></br>
+Skirmish: [10, 60]<br></br>
+:::
+
+```js
+await RCONClientV2.server.setMatchLength(gameMode, duration);
+```
+
+#### Parameters
+
+| Name     | Description                                                                             | Type   | Required |
+|----------|-----------------------------------------------------------------------------------------|--------|----------|
+| gamemode | The gamemode to set the timer length for. Can be `Warfare`, `Offensive`, or `Skirmish`. | string | True     |
+| duration | The time in minutes to set the duration for.                                            | number | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Reset Match Timer Length
+
+:::note
+`gamemode` Is not case sensitive.
+:::
+
+```js
+await RCONClientV2.server.resetMatchLength(gameMode);
+```
+
+#### Parameters
+
+| Name     | Description                                                                             | Type   | Required |
+|----------|-----------------------------------------------------------------------------------------|--------|----------|
+| gamemode | The gamemode to set the timer length for. Can be `Warfare`, `Offensive`, or `Skirmish`. | string | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Set Match Warmup Timer Length
+
+:::note
+`gamemode` Is not case sensitive.
+:::
+
+:::info
+`duration` **Must** be between 1 and 10.
+:::
+
+```js
+await RCONClientV2.server.setWarmupLength(gameMode, duration);
+```
+
+#### Parameters
+
+| Name     | Description                                                                                    | Type   | Required |
+|----------|------------------------------------------------------------------------------------------------|--------|----------|
+| gamemode | The gamemode to set the warmup timer length for. Can be `Warfare`, `Offensive`, or `Skirmish`. | string | True     |
+| duration | The time in minutes to set the duration for.                                                   | number | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Reset Match Timer Length
+
+:::note
+`gamemode` Is not case sensitive.
+:::
+
+```js
+await RCONClientV2.server.resetWarmupLength(gameMode);
+```
+
+#### Parameters
+
+| Name     | Description                                                                                    | Type   | Required |
+|----------|------------------------------------------------------------------------------------------------|--------|----------|
+| gamemode | The gamemode to set the warmup timer length for. Can be `Warfare`, `Offensive`, or `Skirmish`. | string | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`

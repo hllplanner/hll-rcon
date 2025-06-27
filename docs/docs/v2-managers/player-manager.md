@@ -15,7 +15,7 @@ The player manager is used for managing the active players on the server.
   clanTag: string,
   iD: string,
   platform: string,
-  eOSId: string,
+  eosId: string,
   level: number,
   team: number,
   role: number,
@@ -196,6 +196,43 @@ await RCONClientV2.players.removeBan(playerId);
 | Name     | Description      | Type   | Required |
 |----------|------------------|--------|----------|
 | playerId | The player's ID. | string | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Add Player as VIP
+
+```js
+await RCONClientV2.players.addVIP(playerId, nickname);
+```
+
+#### Parameters
+
+| Name     | Description                | Type   | Required |
+|----------|----------------------------|--------|----------|
+| playerId | The player's ID.           | string | True     |
+| nickname | A nickname for the player. | string | True     |
+
+#### Returns
+
+`Promise<{ success: boolean, error?: string }>`
+
+---
+
+### Remove Player as VIP
+
+```js
+await RCONClientV2.players.removeVIP(playerId);
+```
+
+#### Parameters
+
+| Name     | Description                | Type   | Required |
+|----------|----------------------------|--------|----------|
+| playerId | The player's ID.           | string | True     |
 
 #### Returns
 
