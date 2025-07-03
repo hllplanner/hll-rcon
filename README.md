@@ -114,7 +114,7 @@ client.on("ready", async () => {
 | <sub> List Admin Groups                                     | <sub> Get AdminGroups             | <sub> ✅           | <sub> N/A*                                   | <sub> N/A*        | <sub> AdminManager    |
 | <sub> Displayable Commands                                  | <sub> Help                        | <sub> ❌           | <sub> DisplayableCommands                    | <sub> ❌           | <sub> RCONClientV2 ** |
 | <sub> Client Reference Data                                 | <sub> **Help Command? **          | <sub> ❌           | <sub> ClientReferenceData                    | <sub> ❌           | <sub> RCONClientV2 ** |
-| <sub> Admin Log                                             | <sub> ShowLog                     | <sub> ✅           | <sub> AdminLog                               | <sub> ✅           | <sub> LogManager      |
+| <sub> Admin Log                                             | <sub> ShowLog                     | <sub> ✅           | <sub> GetAdminLog                            | <sub> ✅           | <sub> LogManager      |
 
 <sub>*N/A\* Some methods supported by RCONv1 are not supported by RCONv2, and vice versa.*</sub><br/>
 
