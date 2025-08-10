@@ -1227,7 +1227,7 @@ Each line is prefixed with how long ago the event took place, as well as the tim
 | <sub>`hill400_offensive_US`**              | <sub>`Hill400`              | <sub>HILL 400 Offensive           | <sub>Hill 400          | <sub>Offensive | <sub>Day         | <sub>US        |
 | <sub>`hill400_warfare`                     | <sub>`Hill400`              | <sub>HILL 400 Warfare             | <sub>Hill 400          | <sub>Warfare   | <sub>Day         | <sub>          |
 | <sub>`hill400_warfare_night`***            |                             |                                   |                        |                |                  |                |
-| <sub>`Hill400_N`                           | <sub>HILL 400 Warfare       | <sub>Hill 400                     | <sub>Warfare           | <sub>Night     | <sub>            |                |
+| <sub>`Hill400_N`                           | <sub>HILL 400 Warfare       | <sub>Hill 400                     | <sub>Hill 400          | <sub>Warfare   | <sub>Night       |                |
 | <sub>`hurtgenforest_offensive_ger`         | <sub>`Hurtgen`              | <sub>HÜRTGEN FOREST Offensive     | <sub>Hürtgen Forest    | <sub>Offensive | <sub>Foggy       | <sub>GER       |
 | <sub>`hurtgenforest_offensive_US`          | <sub>`Hurtgen`              | <sub>HÜRTGEN FOREST Offensive     | <sub>Hürtgen Forest    | <sub>Offensive | <sub>Day         | <sub>US        |
 | <sub>`hurtgenforest_warfare_V2`            | <sub>`Hurtgen`              | <sub>HÜRTGEN FOREST Warfare       | <sub>Hürtgen Forest    | <sub>Warfare   | <sub>Day         | <sub>          |
