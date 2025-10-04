@@ -15,19 +15,19 @@ yarn add hll-ircon
 npm i hll-ircon
 ```
 
-## Instantiating the IRCONClient
+## Getting Started
 
-```js title="index.js"
-const { IRCONClient } = require("hll-ircon");
+```js
+const { RCONClientV2 } = require("hll-ircon");
 
-const client = new IRCONClient({
+const client = new RCONClientV2({
   host: "127.0.0.1",
   port: "8000",
   password: "RCON_PASSWORD"
 });
 
 client.on("ready", async () => {
-  const serverName = await client.v2.server.getServerName();
+  const serverName = await client.server.getServerName();
   console.log(`Logged in to server: ${serverName}`);
 });
 ```
@@ -41,5 +41,5 @@ validate any inputs before passing them to an API.
 
 ## Issuing Commands
 
-To issue RCON commands using the managers structure, see [RCONClientV1](./clients/RCONClientV1.md) and [RCONClientV2](./clients/RCONClientV2.md) to find their respective managers.
+To issue RCON commands using the built-in manager structures, see [RCONClientV2](RCONClientV2.md).
 Alternatively if you would like to write your own commands, see [how to send messages manually](./other/manually-sending-messages.md).

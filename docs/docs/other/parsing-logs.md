@@ -3,8 +3,7 @@ sidebar_position: 1
 title: Parsing Logs
 ---
 
-All logs returned from `RCONClientV1` and `RCONClientV2` both share the same structure, and are automatically parsed
-into easily digestible JSON formats listed below.
+All logs returned from `RCONClientV2` are automatically parsed into easily digestible JSON formats listed below.
 
 :::note
 Every log shares two common variables: `type` and `timestamp`. Because of this they will be omitted from the following
