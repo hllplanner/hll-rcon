@@ -1,6 +1,6 @@
 {
-  "name": "hll-ircon",
-  "version": "1.3.3",
+  "name": "hll-rcon",
+  "version": "2.0.0",
   "description": "",
   "main": "lib/index.js",
   "devDependencies": {

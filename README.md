@@ -3,7 +3,7 @@
 <div id="toc">
   <ul style="list-style: none">
     <summary>
-      <h1>HLL Integrated RCON</h1>
+      <h1>HLL RCON</h1>
     </summary>
   </ul>
 </div>
@@ -15,19 +15,19 @@
 ## Installation
 
 ```bash
-yarn add hll-ircon
+yarn add hll-rcon
 ...
-npm i hll-ircon
+npm i hll-rcon
 ```
 
 ## Getting Started
 
 ```js
-const { RCONClientV2 } = require("hll-ircon");
+const { RCONClient } = require("hll-rcon");
 
-const client = new RCONClientV2({
-  host: "127.0.0.1",
-  port: "8000",
+const client = new RCONClient({
+  host: "123.123.123.123",
+  port: "7799",
   password: "RCON_PASSWORD"
 });
 
@@ -36,5 +36,3 @@ client.on("ready", async () => {
   console.log(`Logged in to server: ${serverName}`);
 });
 ```
-
-## [Access The Full Documentation](https://ircon.hllplanner.net)
