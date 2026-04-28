@@ -1,3 +1,7 @@
+> [!WARNING]
+> This library is deprecated. See alternative [hll.js](https://github.com/hllplanner/hll.js).
+
+
 <div align="center">
 <img src="https://github.com/hllplanner/hll-ircon/blob/master/.github/resources/ircon-primary-logo-transparent-slim.png">
 <div id="toc">
