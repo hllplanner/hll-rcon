@@ -1,5 +1,5 @@
 > [!WARNING]
-> This library is deprecated. See alternative [hll.js](https://github.com/hllplanner/hll.js).
+> This library is deprecated. See alternative [hll.js](https://github.com/oneandonlyfinbar/hll.js).
 
 
 <div align="center">
